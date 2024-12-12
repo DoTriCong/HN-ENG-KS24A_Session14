@@ -6,8 +6,8 @@ int main() {
     int num = 0;
 
     printf("Chuoi da khai bao: %s\n", str);
-
-    for (int i = 0; str[i] != '\0'; i++) {
+    int size = strlen(str); 
+    for (int i = 0; i<size; i++) {
         if (str[i] == ' ' || str[i] == '\n' || str[i] == '\t') {
             num = 0;
         } else if (num == 0) {
